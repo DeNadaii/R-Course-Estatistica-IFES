@@ -18,3 +18,36 @@ SalaDeAula = c(101,105,401,503);
 nomes = c("jesus","maria","jose")
 #nao devemos misturar diferentes tipos de dados no mesmo objeto
 objetoCombinado = c("jesus","maria","jose",101,105,401,503)
+objetoCombinado_2 = c(101,105,401,503,"jesus","maria","jose")
+#mostrar os elementos dentro de um objeto
+print(nomes)
+#mostrar tipo dentro de um objeto
+class(nomes)
+#mostra um resumo do objeto
+str(nomes)
+
+#calculo com vetores
+notaProva_1 = c(10,9.5,9)
+notaProva_2 = c(5,5.6,7.8)
+notaFinal = notaProva_1 + notaProva_2
+multiplicaPor10 = notaFinal * 10
+
+#atribuindo Nomes
+names(notaFinal) = nomes
+print(notaFinal)
+
+#Fatores(definem variaveis categoricas)
+genero = c("fluido","masculino","feminino")
+genero = factor(genero)
+str(genero)
+table(genero)
+
+#exercicio
+meuNome = "Igor"
+vetor_1 = seq(1,5)
+vetor_2 = -1 * vetor_1
+vetor_3 = c(vetor_1 * vetor_2)**2
+
+
+
+
